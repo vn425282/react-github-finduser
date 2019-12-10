@@ -1,7 +1,7 @@
 import React from 'react';
 import './search.scss';
 import TextField from '@material-ui/core/TextField';
-import giphyService from '../../service/giphy.service';
+import giphyService from '../../service/github.service';
 import Button from '@material-ui/core/Button';
 import Gridlist from '../common/gridlist/gridlist';
 

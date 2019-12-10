@@ -20,6 +20,10 @@ class BaseService {
         }
         return axios.get(action, { ...newConfig, params });
     }
+
+    getGitOauth(action, params = {}) {
+        return axios.get(action + '/' + params.code);
+    }
 }
 
 export default new BaseService();
