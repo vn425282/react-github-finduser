@@ -67,6 +67,83 @@
   text-align: center;
 }
 
+.repo-list, .repo-list-item {
+  position: relative;
+}
+
+
+.d-flex {
+  display: flex!important;
+}
+
+.py-4 {
+  padding-top: 24px!important;
+  padding-bottom: 24px!important;
+}
+
+.mr-2 {
+  margin-right: 8px!important;
+}
+
+.mt-n1 {
+  margin-top: -4px!important;
+}
+
+.text-normal {
+  font-weight: 400!important;
+}
+
+.topic-tag {
+  display: inline-block;
+  padding: .3em .9em;
+  margin: 0 .5em .5em 0;
+  white-space: nowrap;
+  background-color: #f1f8ff;
+  border-radius: 3px;
+}
+
+.f6 {
+  font-size: 12px!important;
+}
+
+.px-2 {
+  padding-right: 8px!important;
+}
+
+.mb-1 {
+  margin-bottom: 4px!important;
+}
+
+.hx_hit-commit em, .hx_hit-highlighting-wrapper em, .hx_hit-issue em, .hx_hit-marketplace em, .hx_hit-package em, .hx_hit-repo em, .hx_hit-user em, .hx_hit-wiki em {
+  font-style: normal;
+  font-weight: 600;
+}
+
+.img-circle {
+  border-radius: 50%;
+}
+
+.btn-default {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+}
+
+.h2, h2 {
+  font-size: 30px;
+}
+
+.repo-list-item {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  list-style: none;
+  border-bottom: 1px solid #eee;
+}
+
+.navigation {
+  padding-top: 30px !important;
+}
+
 @media only screen and (max-width: 767px) {
   .search {
     padding: 25px 16px;

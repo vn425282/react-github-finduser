@@ -6,9 +6,8 @@ import * as serviceWorker from './serviceWorker';
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import Header from './components/common/header/header';
 import NotFound from './components/notfound/notfound';
-import Favorites from './components/favorites/favorites';
-import Home from './components/home/home';
 import Search from './components/search/search';
+import Login from './components/login/login';
 import Footer from './components/common/footer/footer';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
@@ -25,9 +24,8 @@ const routing = (
             <div className="container">
                 <Header />
                 <Switch>
-                    <Route exact path="/" component={Home} />
+                    <Route exact path="/" component={Login} />
                     <Route path="/search" component={Search} />
-                    <Route path="/fav" component={Favorites} />
                     <Route component={NotFound} />
                 </Switch>
                 <Footer />
