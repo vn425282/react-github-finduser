@@ -8,7 +8,6 @@ const config = {
 };
 
 class BaseService {
-
     get(action, params = {}, token = '', addTokenToHeader = false) {
         let newConfig = { ...config };
 

@@ -14,23 +14,38 @@ import { Provider } from 'react-redux';
 import rootReducer from './reducers';
 import "core-js/stable";
 import "regenerator-runtime/runtime";
+import { GuardedRoute, GuardProvider } from 'react-router-guards';
+import oauthRequired from './router/guards/oauthRequired';
+import Loader from 'react-loader-spinner';
+import { usePromiseTracker } from 'react-promise-tracker';
 
 const rootElement = document.getElementById('root')
 const store = createStore(rootReducer);
+const GLOBAL_GUARDS = [oauthRequired];
+
+const LoadingIndicator = props => {
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    const { promiseInProgress } = usePromiseTracker();
+    return promiseInProgress &&
+        <Loader type="TailSpin" color="#0366d6" />
+};
 
 const routing = (
     <Router>
         <Provider store={store}>
             <div className="container">
                 <Header />
-                <Switch>
-                    <Route exact path="/" component={Login} />
-                    <Route path="/search" component={Search} />
-                    <Route component={NotFound} />
-                </Switch>
+                <GuardProvider guards={GLOBAL_GUARDS}>
+                    <Switch>
+                        <Route exact path="/" component={Login} />
+                        <GuardedRoute path="/search" component={Search} />
+                        <Route component={NotFound} />
+                    </Switch>
+                </GuardProvider>
                 <Footer />
             </div>
         </Provider>
+        <LoadingIndicator />
     </Router>
 );
 
