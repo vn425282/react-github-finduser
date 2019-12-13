@@ -7,7 +7,7 @@ function FetchMore ({ hasNextPage, variables, updateQuery, fetchMore }) {
     return (
       <p className="fetchmore">
         <Button variant="contained" color="primary" onClick={() => fetchMore({ variables, updateQuery })}>
-          Fetch More !!!
+          Fetch More
         </Button>
       </p>
     );

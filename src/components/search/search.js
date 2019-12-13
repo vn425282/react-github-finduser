@@ -2,7 +2,7 @@ import React from 'react';
 import './search.scss';
 import TextField from '@material-ui/core/TextField';
 import UserInfo from '../userinfo/userinfo';
-import ListRepositories from '../listrepositories/listRepositories';
+import ListRepositories from '../list-repositories/listRepositories';
 import { ApolloProvider } from 'react-apollo';
 import gitService from '../../service/github.service';
 import { STORAGE_KEYS } from '../../service/sessionStorage.service';
