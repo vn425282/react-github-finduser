@@ -33,12 +33,12 @@ you can edit some information inside the github.service.js file
 ## Screenshoot
 
 ● Homepage 
---  Using your github account for getting the code and the token will be exchanged 
+-  Using your github account for getting the code and the token will be exchanged 
 by my herokuapp for handshake with github.
 
 ![Alt text](https://i.ibb.co/BstWCdt/Screen-Shot-2019-12-15-at-14-26-31.png?raw=true "Title")
 ● Search Page 
--- You can allow to input the username and press Enter, regex error message
+- You can allow to input the username and press Enter, regex error message
 will be show up if you try to enter the special characters.
 ![Alt text](https://i.ibb.co/WBhn9jp/Screen-Shot-2019-12-15-at-14-39-07.png?raw=true "Title")
 
