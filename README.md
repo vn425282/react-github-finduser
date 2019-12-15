@@ -41,12 +41,15 @@ by my herokuapp for handshake with github.
 ● Search Page 
 - You can allow to input the username and press Enter, regex error message
 will be show up if you try to enter the special characters.
+
 ![Alt text](https://i.ibb.co/WBhn9jp/Screen-Shot-2019-12-15-at-14-39-07.png?raw=true "Title")
 
 - Fetch more feature ( if the results > 5 )
+
  ![Alt text](https://i.ibb.co/7n6K9fS/Screen-Shot-2019-12-15-at-14-39-26.png?raw=true "Title")
 
 - Readme Reader Popup
+
 ![Alt text](https://i.ibb.co/J7ggyvw/Screen-Shot-2019-12-15-at-14-39-44.png?raw=true "Title")
 
 - GitHub config ( you can change inside the github.service.js based on your own setting )
