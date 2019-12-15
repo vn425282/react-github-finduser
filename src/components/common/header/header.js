@@ -1,8 +1,9 @@
 import React from "react";
 import './header.scss';
 import { NavLink } from "react-router-dom";
+import { STORAGE_KEYS } from "../../../service/sessionStorage.service";
 
-function Header () {
+function Header() {
   return (
     <>
       <nav className="header">
@@ -12,7 +13,7 @@ function Header () {
           </svg>
         </NavLink>
         <NavLink exact className="header_link header_link-search" activeClassName="header_link-active" to="/">
-          Login
+          {sessionStorage.getItem(STORAGE_KEYS.TOKEN_LOGGED_IN) !== null ? 'Logout' : 'Login'}
         </NavLink>
         <NavLink exact className="header_link header_link-search" activeClassName="header_link-active" to="/search">
           Search

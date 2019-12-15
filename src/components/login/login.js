@@ -2,15 +2,11 @@ import React, { useEffect } from 'react';
 import queryString from 'query-string';
 import gitHubService from '../../service/github.service';
 import cryptoService from '../../service/crypto.service';
-import { useDispatch } from "react-redux";
-import { addToken } from '../../actions/github.action';
 import { STORAGE_KEYS } from '../../service/sessionStorage.service';
 import { trackPromise } from 'react-promise-tracker';
 import './login.scss';
 
 function Login (props) {
-  // mapDispatchToProps
-  const dispatch = useDispatch();
   useEffect(() => {
     sessionStorage.removeItem(STORAGE_KEYS.TOKEN_LOGGED_IN);
     const { code } = queryString.parse(props.location.search);
@@ -24,9 +20,6 @@ function Login (props) {
             console.log(res);
             // oAuth okay
             if (res.data.token) {
-              dispatch(
-                addToken(res.data.token)
-              );
               const hash = cryptoService.encrypt(res.data.token);
               sessionStorage.setItem(STORAGE_KEYS.TOKEN_LOGGED_IN, hash);
               props.history.push('/search');

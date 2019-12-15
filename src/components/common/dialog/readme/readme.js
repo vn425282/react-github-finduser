@@ -1,25 +1,23 @@
 import React, { useEffect } from 'react';
+import { useStore } from 'react-redux';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
-import MdEditor from 'react-markdown-editor-lite';
-import MarkdownIt from 'markdown-it';
+import ReactMarkdown from 'react-markdown/with-html';
 import './readme.scss';
 
-import { Button, DialogTitle, DialogContent, DialogContentText, DialogActions, Dialog, useTheme } from '@material-ui/core';
+import { Button, DialogTitle, DialogContent, DialogActions, Dialog, useTheme } from '@material-ui/core';
 
-function ReadMeDiaLog ({isOpen, handleDialogClose}) {
+function ReadMeDiaLog({ isOpen, handleDialogClose }) {
+  const store = useStore();
   const [open, setOpen] = React.useState(false);
-  useEffect(() => { console.log('ggg', isOpen); setOpen(isOpen);  }, [isOpen]);
+  useEffect(() => {
+    setOpen(isOpen);
+  }, [isOpen]);
   const theme = useTheme();
   const fullScreen = useMediaQuery(theme.breakpoints.down('sm'));
-  const MOCK_DATA = "Hello.\n\n * This is markdown.\n * It is fun\n * Love it or leave it."
   const handleClose = () => {
     setOpen(false);
     handleDialogClose();
   };
-
-  function handleEditorChange ({html, text}) {
-    console.log('handleEditorChange', html, text)
-  }
 
   return (
     <>
@@ -30,22 +28,17 @@ function ReadMeDiaLog ({isOpen, handleDialogClose}) {
           onClose={handleClose}
           aria-labelledby="responsive-dialog-title"
         >
-          <DialogTitle id="responsive-dialog-title">{"Use Google's location service?"}</DialogTitle>
+          <DialogTitle id="responsive-dialog-title">{"README.md"}</DialogTitle>
           <DialogContent>
-            <DialogContentText>
-            <MdEditor
-              value={MOCK_DATA}
-              renderHTML={(text) => text}
-              onChange={handleEditorChange}
-            />
-          </DialogContentText>
+              <div>
+              <ReactMarkdown
+                source={store.getState().readmeReducers[0]}
+                escapeHtml={false}
+              /></div>
           </DialogContent>
           <DialogActions>
-            <Button autoFocus onClick={handleClose} color="primary">
-              Disagree
-          </Button>
             <Button onClick={handleClose} color="primary" autoFocus>
-              Agree
+              Close
           </Button>
           </DialogActions>
         </Dialog>

@@ -1,46 +1,34 @@
 .img-circle {
-  border-radius: 50%;
+    border-radius: 50%;
 }
 
 @media only screen and (max-width: 992px) {
-  .infomation {
-    align-items: center !important;
-    justify-content: center !important;
-    text-align: center;
-    padding-top:10px;
-  }
+    .infomation {
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center;
+        padding-top: 10px;
+    }
 }
 
 @media only screen and (max-width: 767px) {
-  .search {
-    padding: 25px 16px;
-  }
-  .images {
-    &_container {
-      width: 50%;
+    .images-circle {
+        &_container {
+            width: 50%;
+        }
+        &_image {
+            height: 35.46vw;
+            max-height: 272px;
+        }
     }
-    &_image {
-      height: 35.46vw;
-      max-height: 272px;
-    }
-  }
-  .images-circle {
-    &_container {
-      width: 50%;
-    }
-    &_image {
-      height: 35.46vw;
-      max-height: 272px;
-    }
-  }
 }
 
 @media only screen and (max-width: 359px) {
-  .search {
-    &_input {
-      .MuiInputBase-input {
-        font-size: 24px;
-      }
+    .search {
+        &_input {
+            .MuiInputBase-input {
+                font-size: 24px;
+            }
+        }
     }
-  }
 }

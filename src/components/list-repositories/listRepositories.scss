@@ -1,20 +1,24 @@
-
 .repo-list-item {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  list-style: none;
-  border-bottom: 1px solid #eee;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    list-style: none;
+    border-bottom: 1px solid #eee;
 }
 
 .navigation {
-  padding-top: 30px !important;
+    padding-top: 30px !important;
 }
 
 .f6 {
-  font-size: 12px!important;
+    font-size: 12px!important;
 }
 
-.pointer{
-  cursor: pointer;
-  color: blue;
+.active {
+    cursor: pointer;
+    color: blue;
+}
+
+.unactive {
+    pointer-events: none;
+    color: gray;
 }

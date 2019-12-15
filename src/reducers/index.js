@@ -1,8 +1,6 @@
 import { combineReducers } from 'redux';
-import githubReducers from './github.reducer';
-import favoritesReducers from './favorites.reducer';
+import readmeReducers from './readme.reducer';
 
 export default combineReducers({
-    favoritesReducers,
-    githubReducers
+    readmeReducers
 })
