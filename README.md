@@ -4,6 +4,7 @@
 ## Required create an OAuth App
 
 https://developer.github.com/apps/building-oauth-apps/creating-an-oauth-app/
+
 after that Editing your clientID: '8a91cd834c4ea7e246cd' inside the github.service.js
 
 ## Deployed URL ( AWS Amplify )
