@@ -1,0 +1,20 @@
+.readme {
+  padding: 25px 16px;
+  &_title {
+    font-size: 26px;
+    line-height: 40px;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+}
+
+.form-group label {
+    width: 100%;
+}
+
+@media screen and (max-width: 425px) {
+  .card-wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+}

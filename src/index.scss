@@ -205,6 +205,16 @@ body {
   margin-right: 16px !important;
 }
 
+.repo-language-color-active {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: green;
+}
+
 .repo-language-color {
   position: relative;
   top: 1px;
@@ -212,7 +222,7 @@ body {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: orange;
+  background-color: gray;
 }
 
 .text-gray {
@@ -223,6 +233,9 @@ a {
   text-decoration: none !important;
 }
 
+.h2, h2 {
+  font-size: 30px;
+}
 
 @media only screen and (max-width: 768px) {
   .container {

@@ -8,7 +8,6 @@ const config = {
 };
 
 class BaseService {
-
     get(action, params = {}, token = '', addTokenToHeader = false) {
         let newConfig = { ...config };
 
@@ -19,6 +18,10 @@ class BaseService {
             params['api_key'] = token;
         }
         return axios.get(action, { ...newConfig, params });
+    }
+
+    getGitOauth(action, params = {}) {
+        return axios.get(action + '/' + params.code);
     }
 }
 
