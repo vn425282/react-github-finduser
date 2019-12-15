@@ -19,7 +19,7 @@ you can edit some information inside the github.service.js file
 
    * [x] Login by GitHub oAuth
    * [x] Display User Information
-   * [x] CI/CD by AWS Amplify
+   * [x] CI/CD by AWS Amplify ( Auto deploy if have any change from master branch )
    * [x] Seach GitRepo by Username
    * [x] Responsive for Mobile
    * [x] Regex for input based on Github regex
