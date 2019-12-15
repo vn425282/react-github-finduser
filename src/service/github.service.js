@@ -8,7 +8,7 @@ import cryptoService from './crypto.service';
 
 const configDefault = {
     clientID: '8a91cd834c4ea7e246cd',
-    redirectURL: 'http://localhost:3000/',
+    redirectURL: 'https://master.d1o4vlm8phh8u.amplifyapp.com',
     herokuappAuthURL: 'https://react-github-finduser.herokuapp.com/authenticate',
     gitGraphqlURL: 'https://api.github.com/graphql'
 };
