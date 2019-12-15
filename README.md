@@ -17,7 +17,7 @@ you can edit some information inside the github.service.js file
 
 ## Uses case
 
-   * [x] Login by GitHub oAuth
+   * [x] Login by GitHub oAuth, after login, you wil be reditect to Search Page, and if you click Login again, it's means Logout and clear your current Token
    * [x] Display User Information
    * [x] CI/CD by AWS Amplify ( Auto deploy if have any change from master branch )
    * [x] Seach GitRepo by Username
