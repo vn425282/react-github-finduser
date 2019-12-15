@@ -37,6 +37,7 @@ you can edit some information inside the github.service.js file
 by my herokuapp for handshake with github.
 
 ![Alt text](https://i.ibb.co/BstWCdt/Screen-Shot-2019-12-15-at-14-26-31.png?raw=true "Title")
+
 ● Search Page 
 - You can allow to input the username and press Enter, regex error message
 will be show up if you try to enter the special characters.
