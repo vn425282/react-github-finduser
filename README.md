@@ -24,7 +24,7 @@ you can edit some information inside the github.service.js file
    * [x] Responsive for Mobile
    * [x] Regex for input based on Github regex
    * [x] Loader when calling APIs 
-   * [x] Apply GraphQL API v4, exchange the code from Github => token by seft hosted from Heroku Cloud Service
+   * [x] Apply GraphQL API v4, exchange the code from Github => token by seft-hosted from Heroku Cloud Service
    * [x] Route Guard ( required login for search )
    * [x] Fetch More features ( max show up 5 repositories for each fetch )
    * [x] Status of README.md file ( exist or not ). If not, you can not click to show up the readme file description popup.
